@@ -10,15 +10,15 @@
 task main(){
 	// This is a crude infinite loop - everything inside the while loop is repeated forever.
 	while (1 == 1){
-		motor[rightMotor] = vexRT[Ch3]; // binds the right motor to the third joystick channel
-		motor[leftMotor] = vexRT[Ch2]; // binds the left motor to the second joystick channel
+		motor[rightMotor] = vexRT[Ch2]; // binds the right motor to the third joystick channel
+		motor[leftMotor] = vexRT[Ch3]; // binds the left motor to the second joystick channel
 
 		// This if structure controls the arm
 		if (vexRT[Btn5U] == 1){ // if button 5U is pressed, do next action
-			motor[armMotor] = -127; // sets arm motor to -127
+			motor[armMotor] = -63; // sets arm motor to -127
 		}
 		else if (vexRT[Btn5D] == 1){ // else if button 5D is pressed, do next action
-			motor[armMotor] = 127; // sets arm motor to 127
+			motor[armMotor] = 63; // sets arm motor to 127
 		}
 		else{ // default action - this is very important! if not, the motors will lock after a single command
 			motor[armMotor] = 0; // turns off arm motor

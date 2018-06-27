@@ -8,7 +8,7 @@
 task main(){
 	// This is a crude infinite loop - everything inside the while loop is repeated forever.
 	while (1 == 1){
-		motor[rightMotor] = -vexRT[Ch3]; // binds the right motor to the third joystick channel
-		motor[leftMotor] = -vexRT[Ch2]; // binds the left motor to the second joystick channel
+		motor[rightMotor] = -vexRT[Ch2]; // binds the right motor to the third joystick channel
+		motor[leftMotor] = -vexRT[Ch3]; // binds the left motor to the second joystick channel
 	}
 }
